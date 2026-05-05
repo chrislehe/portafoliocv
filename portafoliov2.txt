@@ -439,24 +439,6 @@ p {
     color: #94a3b8;
 }
 
-.btn-pdf {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 8px 14px;
-    background: #38bdf8;
-    color: #020617;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-pdf:hover {
-    background: #0ea5e9;
-    transform: scale(1.05);
-}
-
 </style>
 </head>
 
@@ -756,96 +738,6 @@ p {
 
     </div>
 </div>
-
-<!-- CASOS REALES -->
-
-<section class="section">
-    <h2>🧠 Casos reales resueltos</h2>
-
-    <div class="grid">
-
-<!-- CASO 1 -->
-<div class="card proyecto">
-    <span class="tag">Operativo</span>
-    <h3>📊 Automatización de reportes en Power BI</h3>
-
-    <p><strong>Contexto:</strong> Reportes manuales de asistencia.</p>
-
-    <p><strong>Problema:</strong> Procesos lentos y propensos a error.</p>
-
-    <p><strong>Diagnóstico:</strong> Identificación de fuentes de datos y flujo manual.</p>
-
-    <p><strong>Solución:</strong> Desarrollo de dashboard automatizado en Power BI.</p>
-
-    <p><strong>Resultado:</strong> Reducción de tiempo de análisis y mejora en toma de decisiones.</p>
-
-    <!-- BOTÓN PDF -->
-    <a href="docs/Control_de_inventario.pdf" target="_blank" class="btn-pdf">
-        📄 Ver manual completo
-    </a>
-</div>
-
-<!-- CASO 2 -->
-<div class="card proyecto">
-    <span class="tag">Operativo</span>
-    <h3>📊 Mejoras y propuestas</h3>
-
-    <p><strong>Contexto:</strong> Identificación de áreas de mejora dentro de los procesos operativos y tecnológicos.</p>
-
-    <p><strong>Problema:</strong> La información y los procesos se gestionaban de forma poco estructurada, generando inconsistencias y falta de seguimiento.</p>
-
-    <p><strong>Diagnóstico:</strong> Análisis de procesos internos, detectando ausencia de documentación y estandarización.</p>
-
-    <p><strong>Solución:</strong> Documentación de procesos, definición de lineamientos y establecimiento de controles operativos.</p>
-
-    <p><strong>Resultado:</strong> Implementación de manuales de servicio que mejoraron la organización, trazabilidad y eficiencia operativa.</p>
-
-    <a href="docs/Mejoras.pdf" target="_blank" class="btn-pdf">
-        📄 Ver manual completo
-    </a>
-</div>
-
-<!-- CASO 3 -->
-<div class="card proyecto">
-    <span class="tag">Operativo</span>
-    <h3>📊 Reloj checador en Microsoft Teams</h3>
-
-    <p><strong>Contexto:</strong> Necesidad de contar con un sistema accesible para el registro de asistencia del personal.</p>
-
-    <p><strong>Problema:</strong> La organización no contaba con una herramienta centralizada para registrar horarios de entrada, salida y tiempos de comida.</p>
-
-    <p><strong>Diagnóstico:</strong> Evaluación de requerimientos operativos y disponibilidad de herramientas dentro del ecosistema Microsoft 365.</p>
-
-    <p><strong>Solución:</strong> Desarrollo e implementación de un sistema de registro integrado en Microsoft Teams, incluyendo captura de ubicación y facilidad de uso.</p>
-
-    <p><strong>Resultado:</strong> Control eficiente de asistencia, mejora en la visibilidad de horarios y cumplimiento de políticas internas.</p>
-
-    <a href="docs/Registro de entrada_Celular.pdf" target="_blank" class="btn-pdf">
-        📄 Ver manual completo
-    </a>
-</div>
-
-<!-- CASO 4 -->
-<div class="card proyecto">
-    <span class="tag">Operativo</span>
-    <h3>📊 Automatización de avisos con Power Automate</h3>
-
-    <p><strong>Contexto:</strong> Necesidad de notificar eventos y registros en tiempo real dentro de la organización.</p>
-
-    <p><strong>Problema:</strong> Los procesos dependían de revisiones manuales, generando retrasos en la comunicación y toma de decisiones.</p>
-
-    <p><strong>Diagnóstico:</strong> Identificación de flujos de trabajo susceptibles a automatización dentro del entorno Microsoft.</p>
-
-    <p><strong>Solución:</strong> Diseño e implementación de flujos automatizados en Power Automate para el envío de notificaciones instantáneas.</p>
-
-    <p><strong>Resultado:</strong> Mejora en la comunicación interna, reducción de tiempos de respuesta y mayor eficiencia operativa.</p>
-
-    <a href="docs/Flujo de trabajo con Microsoft Power Automate.pdf" target="_blank" class="btn-pdf">
-        📄 Ver manual completo
-    </a>
-</div>
-
-</section>
 
 <!-- CONTACTO -->
 <div class="contacto">
