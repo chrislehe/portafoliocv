@@ -1,0 +1,81 @@
+        <!-- CASO 1 -->
+        <div class="card proyecto">
+            <span class="tag">Alta complejidad</span>
+            <h3>⚙️ Error en carga de XML - Contpaqi</h3>
+
+            <p><strong>Contexto:</strong> Proceso contable con carga masiva de XML.</p>
+
+            <p><strong>Problema:</strong> XML válidos ante SAT no se cargaban en el sistema.</p>
+
+            <p><strong>Diagnóstico:</strong> Validación interna inconsistente y conflicto con registros previos.</p>
+
+            <p><strong>Solución:</strong> Depuración de datos, validación manual y ajuste en configuración del sistema.</p>
+
+            <p><strong>Resultado:</strong> Carga completa de documentos y reducción significativa de errores operativos.</p>
+        </div>
+
+        <!-- CASO 2 -->
+        <div class="card proyecto">
+            <span class="tag">Crítico</span>
+            <h3>🌐 Caída de red en sucursal</h3>
+
+            <p><strong>Contexto:</strong> Sucursal sin conectividad afectando operación.</p>
+
+            <p><strong>Problema:</strong> Interrupción total de red e internet.</p>
+
+            <p><strong>Diagnóstico:</strong> Fallo en switch PoE y mala distribución de carga en red.</p>
+
+            <p><strong>Solución:</strong> Reconfiguración de red, redistribución de dispositivos y reemplazo de equipo.</p>
+
+            <p><strong>Resultado:</strong> Restablecimiento inmediato de operaciones y mejora en estabilidad de red.</p>
+        </div>
+
+        <!-- CASO 3 -->
+        <div class="card proyecto">
+            <span class="tag">Alta complejidad</span>
+            <h3>📧 Migración de correos IMAP a Exchange</h3>
+
+            <p><strong>Contexto:</strong> Empresa con correos en sistema legacy.</p>
+
+            <p><strong>Problema:</strong> Riesgo de pérdida de información en migración.</p>
+
+            <p><strong>Diagnóstico:</strong> Evaluación de volumen de datos y compatibilidad.</p>
+
+            <p><strong>Solución:</strong> Migración controlada por lotes, validación de integridad y pruebas.</p>
+
+            <p><strong>Resultado:</strong> Migración exitosa sin pérdida de datos y mejora en administración del correo.</p>
+        </div>
+
+        <!-- CASO 4 -->
+        <div class="card proyecto">
+            <span class="tag">Operativo</span>
+            <h3>📊 Automatización de reportes en Power BI</h3>
+
+            <p><strong>Contexto:</strong> Reportes manuales de asistencia.</p>
+
+            <p><strong>Problema:</strong> Procesos lentos y propensos a error.</p>
+
+            <p><strong>Diagnóstico:</strong> Identificación de fuentes de datos y flujo manual.</p>
+
+            <p><strong>Solución:</strong> Desarrollo de dashboard automatizado en Power BI.</p>
+
+            <p><strong>Resultado:</strong> Reducción de tiempo de análisis y mejora en toma de decisiones.</p>
+        </div>
+
+        <!-- CASO 5 -->
+        <div class="card proyecto">
+            <span class="tag">Crítico</span>
+            <h3>🔒 Implementación de respaldos con Acronis</h3>
+
+            <p><strong>Contexto:</strong> Ausencia de estrategia de respaldo confiable.</p>
+
+            <p><strong>Problema:</strong> Riesgo alto de pérdida de información crítica.</p>
+
+            <p><strong>Diagnóstico:</strong> Evaluación de infraestructura y necesidades de backup.</p>
+
+            <p><strong>Solución:</strong> Implementación de Acronis Cyber Protect con políticas automatizadas.</p>
+
+            <p><strong>Resultado:</strong> Protección de datos críticos y recuperación rápida ante incidentes.</p>
+        </div>
+
+    </div>

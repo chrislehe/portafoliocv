@@ -445,56 +445,6 @@ body{
     font-size: 14px;
 }
 
-/* =========================
-   CASE STUDIES
-========================= */
-
-.case-card {
-    overflow: hidden;
-}
-
-.case-item {
-    margin-top: 14px;
-    color: #94a3b8;
-    line-height: 1.6;
-    font-size: 14px;
-}
-
-.case-item strong {
-    color: #ffffff;
-}
-
-/* Hover elegante */
-.case-card:hover .card-image img {
-    transform: scale(1.06);
-}
-
-.metrics{
-    display:flex;
-    gap:12px;
-    margin-top:20px;
-    flex-wrap:wrap;
-}
-
-.metric{
-    background:#0f172a;
-    border:1px solid rgba(255,255,255,0.06);
-    padding:10px 14px;
-    border-radius:12px;
-    min-width:120px;
-}
-
-.metric strong{
-    display:block;
-    color:#38bdf8;
-    font-size:18px;
-}
-
-.metric span{
-    color:#94a3b8;
-    font-size:13px;
-}
-
 </style>
 </head>
 
@@ -512,13 +462,13 @@ body{
             <h1>Christopher Rodriguez</h1>
 
             <div class="hero-role">
-                Especialista en Infraestructura, Soporte TI y Automatización
+                SysAdmin | Soporte Técnico
             </div>
 
             <p>
-                Profesional de TI con más de 8 años de experiencia en soporte técnico, administración de infraestructura, Microsoft 365, 
-                automatización de procesos y análisis de datos. He participado en proyectos de migración, continuidad operativa, 
-                respaldos empresariales y optimización de procesos mediante Power BI y Power Automate.
+                Profesional de soporte técnico con más de 8 años de experiencia
+                en administración de sistemas, infraestructura, soporte operativo,
+                automatización de procesos y resolución de incidencias.
             </p>
 
             <div class="hero-tags">
@@ -530,75 +480,14 @@ body{
             </div>
 
             <div class="hero-buttons">
-
-    <a href="cv.pdf" target="_blank">
-        📄 Ver CV
-    </a>
-
-    <a href="https://linkedin.com" target="_blank">
-        💼 LinkedIn
-    </a>
-
-    <a href="mailto:christopher.rdz93@icloud.com">
-        📩 Contacto
-    </a>
-
-    <a href="https://github.com/chrislehe/" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-    </a>
-
-</div>
+                <a href="cv.pdf" target="_blank">📄 Ver CV</a>
+                <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+                <a href="mailto:tuemail@gmail.com">📩 Contacto</a>
             </div>
 
         </div>
 
     </div>
-</section>
-
-<!-- ACTUALMENTE -->
-
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            🚀 Actualmente
-        </h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>💼 Carrera Profesional</h3>
-
-                <p>
-                    Actualmente colaboro en proyectos de infraestructura,
-                    soporte técnico, continuidad operativa y administración
-                    de plataformas empresariales.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>📊 Automatización y Datos</h3>
-
-                <p>
-                    Desarrollo dashboards en Power BI y soluciones de
-                    automatización utilizando Microsoft Power Platform.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🌐 Desarrollo Web</h3>
-
-                <p>
-                    Construyo proyectos personales utilizando HTML, CSS y
-                    JavaScript para fortalecer mis habilidades como desarrollador.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
 </section>
 
 <!-- SKILLS -->
@@ -688,8 +577,8 @@ body{
                     <h3>Migración IMAP a Exchange</h3>
 
                     <p>
-                        Migración de más de 50 buzones corporativos desde IMAP hacia Microsoft Exchange,
-                        minimizando interrupciones operativas y garantizando continuidad del servicio.
+                        Migración de cuentas IMAP a Microsoft Exchange
+                        para integración empresarial y continuidad operativa.
                     </p>
 
                     <span class="project-link">
@@ -701,12 +590,12 @@ body{
             </a>
 
             <!-- PROYECTO 2 -->
-            <a href="docs/RespaldosAcronis.pdf"
+            <a href="docs/ManualAcronis.pdf"
                target="_blank"
                class="card">
 
                 <div class="card-image">
-                    <img src="img/acronis1.jpg"
+                    <img src="img/acronis.jpg"
                          alt="Respaldos Acronis">
                 </div>
 
@@ -750,7 +639,8 @@ body{
                     <h3>Dashboard de Asistencias</h3>
 
                     <p>
-                        Desarrollo de dashboard que redujo aproximadamente un 70% el tiempo invertido en elaboración manual de reportes.
+                        Desarrollo de dashboard para monitoreo de entradas,
+                        salidas y métricas operativas.
                     </p>
 
                     <span class="project-link">
@@ -801,176 +691,71 @@ body{
 <!-- CASOS -->
 
 <section class="section">
-
     <div class="container">
 
-        <h2 class="section-title">
-            🧠 Casos Reales Resueltos
-        </h2>
+        <h2 class="section-title">🧠 Casos Reales Resueltos</h2>
 
         <div class="grid">
 
-            <!-- CASO 1 -->
             <div class="card case-card">
 
-                <div class="card-image">
-                    <img src="img/casepowerbi.jpg"
-                         alt="Dashboard Power BI">
+                <h3>Automatización de reportes</h3>
+
+                <div class="case-item">
+                    <strong>Problema:</strong>
+                    Reportes manuales lentos y propensos a errores.
                 </div>
 
-                <div class="card-content">
+                <div class="case-item">
+                    <strong>Solución:</strong>
+                    Desarrollo de dashboard automatizado en Power BI.
+                </div>
 
-                    <span class="project-tag">
-                        Power BI
-                    </span>
-
-                    <h3>Automatización de reportes</h3>
-
-                    <div class="case-item">
-                        <strong>Problema:</strong>
-                        Reportes manuales lentos y propensos a errores.
-                    </div>
-
-                    <div class="case-item">
-                        <strong>Solución:</strong>
-                        Desarrollo de dashboard automatizado en Power BI.
-                    </div>
-
-                    <div class="case-item">
-                        <strong>Resultado:</strong>
-                        Mejora en tiempos de análisis y toma de decisiones.
-                    </div>
-
-                    <div class="metrics">
-
-    <div class="metric">
-        <strong>70%</strong>
-        <span>Menos tiempo manual</span>
-    </div>
-
-    <div class="metric">
-        <strong>RH</strong>
-        <span>Monitoreo centralizado</span>
-    </div>
-
-</div>
-
-                    <a href="docs/ReporteDeAsistencias.pdf"
-                       target="_blank"
-                       class="project-link">
-                        Ver caso completo →
-                    </a>
-
+                <div class="case-item">
+                    <strong>Resultado:</strong>
+                    Mejora en tiempos de análisis y toma de decisiones.
                 </div>
 
             </div>
 
-            <!-- CASO 2 -->
             <div class="card case-card">
 
-                <div class="card-image">
-                    <img src="img/teams.jpg"
-                         alt="Reloj checador Teams">
+                <h3>Reloj checador en Teams</h3>
+
+                <div class="case-item">
+                    <strong>Problema:</strong>
+                    Ausencia de sistema centralizado de asistencia.
                 </div>
 
-                <div class="card-content">
+                <div class="case-item">
+                    <strong>Solución:</strong>
+                    Implementación de registro integrado en Microsoft Teams.
+                </div>
 
-                    <span class="project-tag">
-                        Microsoft Teams
-                    </span>
-
-                    <h3>Reloj checador en Teams</h3>
-
-                    <div class="case-item">
-                        <strong>Problema:</strong>
-                        Ausencia de sistema centralizado de asistencia.
-                    </div>
-
-                    <div class="case-item">
-                        <strong>Solución:</strong>
-                        Implementación de registro integrado en Microsoft Teams.
-                    </div>
-
-                    <div class="case-item">
-                        <strong>Resultado:</strong>
-                        Mejor control operativo y trazabilidad.
-                    </div>
-
-                    <div class="metrics">
-
-    <div class="metric">
-        <strong>100%</strong>
-        <span>Registro digital</span>
-    </div>
-
-    <div class="metric">
-        <strong>Teams</strong>
-        <span>Integración operativa</span>
-    </div>
-
-</div>
-
-                    <a href="docs/Registro de entrada_Celular.pdf"
-                       target="_blank"
-                       class="project-link">
-                        Ver caso completo →
-                    </a>
-
+                <div class="case-item">
+                    <strong>Resultado:</strong>
+                    Mejor control operativo y trazabilidad.
                 </div>
 
             </div>
 
-            <!-- CASO 3 -->
             <div class="card case-card">
 
-                <div class="card-image">
-                    <img src="img/automate.jpg"
-                         alt="Power Automate">
+                <h3>Automatización con Power Automate</h3>
+
+                <div class="case-item">
+                    <strong>Problema:</strong>
+                    Retrasos por validaciones manuales.
                 </div>
 
-                <div class="card-content">
+                <div class="case-item">
+                    <strong>Solución:</strong>
+                    Flujos automáticos de notificaciones.
+                </div>
 
-                    <span class="project-tag">
-                        Automatización
-                    </span>
-
-                    <h3>Automatización con Power Automate</h3>
-
-                    <div class="case-item">
-                        <strong>Problema:</strong>
-                        Retrasos por validaciones manuales.
-                    </div>
-
-                    <div class="case-item">
-                        <strong>Solución:</strong>
-                        Flujos automáticos de notificaciones.
-                    </div>
-
-                    <div class="case-item">
-                        <strong>Resultado:</strong>
-                        Reducción de tiempos de respuesta.
-                    </div>
-
-                    <div class="metrics">
-
-    <div class="metric">
-        <strong>Automático</strong>
-        <span>Alertas en tiempo real</span>
-    </div>
-
-    <div class="metric">
-        <strong>Menos</strong>
-        <span>Validaciones manuales</span>
-    </div>
-
-</div>
-
-                    <a href="docs/Flujo de trabajo con Microsoft Power Automate.pdf"
-                       target="_blank"
-                       class="project-link">
-                        Ver caso completo →
-                    </a>
-
+                <div class="case-item">
+                    <strong>Resultado:</strong>
+                    Reducción de tiempos de respuesta.
                 </div>
 
             </div>
@@ -978,7 +763,6 @@ body{
         </div>
 
     </div>
-
 </section>
 
 <!-- EXPERIENCIA -->
@@ -1092,140 +876,13 @@ body{
     </div>
 </section>
 
-<!-- APRENDIZAJE CONTINUO -->
-
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            📚 Aprendizaje Continuo
-        </h2>
-
-        <p style="color:#94a3b8; text-align:center; margin-top:-10px; margin-bottom:30px;">
-    Tecnologías y habilidades que actualmente estoy desarrollando para crecer profesionalmente.
-</p>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>💻 Desarrollo Web</h3>
-                <p>
-                    Fortaleciendo habilidades en HTML, CSS y JavaScript,
-                    enfocándome en la creación de interfaces modernas y responsivas.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>☁️ Microsoft 365</h3>
-                <p>
-                    Profundizando en administración de entornos empresariales,
-                    Exchange Online y herramientas colaborativas.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>📊 Power BI</h3>
-                <p>
-                    Mejora en análisis de datos, visualización y creación de dashboards
-                    para toma de decisiones.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>⚙️ Automatización</h3>
-                <p>
-                    Explorando Power Automate para optimización de procesos
-                    y reducción de tareas manuales.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>☁️ Cloud Computing</h3>
-                <p>
-                    Estudio de fundamentos de AWS y servicios en la nube
-                    para infraestructura moderna.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CERTIFICACIONES -->
-<!-- 
-<section class="section">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            📚 Formación y Certificaciones
-        </h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>Microsoft 365</h3>
-
-                <p>
-                    Administración de usuarios, Exchange Online,
-                    licenciamiento y servicios empresariales.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Power BI</h3>
-
-                <p>
-                    Creación de dashboards, análisis de datos
-                    y automatización de reportes operativos.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Desarrollo Web</h3>
-
-                <p>
-                    HTML, CSS y JavaScript aplicados a proyectos
-                    web responsivos y funcionales.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>AWS Cloud Fundamentals</h3>
-
-                <p>
-                    Conceptos básicos de servicios cloud,
-                    almacenamiento y administración.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
- -->
 <!-- CONTACTO -->
 
 <footer class="contact">
 
-    <p>
-        <i class="fa-solid fa-envelope"></i> Email: christopher.rdz93@icloud.com
-    </p>
+    <p>📧 tuemail@gmail.com</p>
 
-    <p>
-        <i class="fa-solid fa-phone"></i> Tel. 8124536734
-    </p>
-
-    <p>
-        <i class="fa-brands fa-github"></i>
-        <a href="https://github.com/chrislehe/" target="_blank" style="color:#38bdf8; text-decoration:none;">
-            GitHub
-        </a>
-    </p>
+    <p>📱 81XXXXXXXX</p>
 
 </footer>
 

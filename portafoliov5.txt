@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Christopher Rodriguez | SysAdmin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+:root{
+    --bg:#0b1120;
+    --card:#131c31;
+    --card-hover:#18233d;
+    --border:#22304d;
+    --primary:#38bdf8;
+    --text:#e2e8f0;
+    --muted:#94a3b8;
+    --success:#22c55e;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height:1.6;
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1e293b;
+    border-radius:20px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* SECTION */
+
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    font-size:28px;
+    margin-bottom:30px;
+    color:var(--primary);
+}
+
+/* HERO */
+
+.hero{
+    padding:90px 0 50px;
+}
+
+.hero-card{
+    background:linear-gradient(145deg,#131c31,#0f172a);
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:50px 30px;
+    text-align:center;
+    box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
+
+.hero-img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid var(--primary);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero-role{
+    color:var(--primary);
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:var(--muted);
+    max-width:700px;
+    margin:auto;
+}
+
+.hero-tags{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.hero-tags span{
+    background:#0f172a;
+    border:1px solid var(--border);
+    padding:10px 15px;
+    border-radius:999px;
+    font-size:13px;
+    color:var(--muted);
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.hero-buttons a{
+    display:inline-block;
+    margin:8px;
+    padding:12px 18px;
+    border-radius:12px;
+    background:var(--primary);
+    color:#021018;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.hero-buttons a:hover{
+    transform:translateY(-4px);
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:24px;
+    transition:.3s;
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:var(--card-hover);
+    border-color:var(--primary);
+}
+
+.card h3{
+    margin-bottom:12px;
+    font-size:19px;
+    color:white;
+}
+
+.card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.card a{
+    text-decoration:none;
+}
+
+/* SKILLS */
+
+.skill-card{
+    text-align:center;
+}
+
+.skill-icon{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.skill-card h3{
+    color:var(--primary);
+}
+
+/* PROJECTS */
+
+.project-tag{
+    display:inline-block;
+    margin-bottom:12px;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px;
+    background:rgba(56,189,248,.1);
+    color:var(--primary);
+    border:1px solid rgba(56,189,248,.2);
+}
+
+.project-link{
+    display:inline-block;
+    margin-top:15px;
+    color:var(--primary);
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* CASES */
+
+.case-card{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.case-card h3{
+    color:var(--primary);
+}
+
+.case-item{
+    border-left:2px solid var(--border);
+    padding-left:12px;
+}
+
+.case-item strong{
+    color:white;
+}
+
+/* EXPERIENCE */
+
+.timeline{
+    position:relative;
+    margin-top:20px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:20px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:var(--border);
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:40px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:12px;
+    top:8px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--primary);
+}
+
+.timeline-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:25px;
+}
+
+.timeline-date{
+    color:var(--primary);
+    font-size:14px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.timeline-card h3{
+    margin-bottom:15px;
+}
+
+.timeline-card p{
+    color:var(--muted);
+    margin-bottom:15px;
+}
+
+.timeline-card ul{
+    padding-left:20px;
+    color:var(--muted);
+}
+
+.timeline-card li{
+    margin-bottom:8px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#060b16;
+    border-top:1px solid var(--border);
+    padding:40px 20px;
+    text-align:center;
+}
+
+.contact p{
+    color:var(--muted);
+    margin:8px 0;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .section{
+        padding:50px 0;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+
+    .timeline-item{
+        padding-left:55px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="container">
+
+        <div class="hero-card">
+
+            <img src="img/foto.png" alt="Christopher Rodriguez" class="hero-img">
+
+            <h1>Christopher Rodriguez</h1>
+
+            <div class="hero-role">
+                SysAdmin | Soporte Técnico
+            </div>
+
+            <p>
+                Profesional de soporte técnico con más de 8 años de experiencia
+                en administración de sistemas, infraestructura, soporte operativo,
+                automatización de procesos y resolución de incidencias.
+            </p>
+
+            <div class="hero-tags">
+                <span>🌎 LATAM</span>
+                <span>⚙️ Infraestructura</span>
+                <span>☁️ Cloud</span>
+                <span>📊 Automatización</span>
+                <span>👥 Liderazgo</span>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="cv.pdf" target="_blank">📄 Ver CV</a>
+                <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+                <a href="mailto:tuemail@gmail.com">📩 Contacto</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section class="section">
+    <div class="container">
+
+        <h2 class="section-title">🛠️ Habilidades</h2>
+
+        <div class="grid">
+
+            <div class="card skill-card">
+                <div class="skill-icon">🖥️</div>
+                <h3>Sistemas</h3>
+                <p>Windows Server, Active Directory, Exchange</p>
+            </div>
+
+            <div class="card skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Redes</h3>
+                <p>IP, DNS, DHCP, VLANs, troubleshooting</p>
+            </div>
+
+            <div class="card skill-card">
+                <div class="skill-icon">🛠️</div>
+                <h3>Soporte</h3>
+                <p>Hardware, software y troubleshooting avanzado</p>
+            </div>
+
+            <div class="card skill-card">
+                <div class="skill-icon">📹</div>
+                <h3>Seguridad</h3>
+                <p>CCTV, biométricos y control de acceso</p>
+            </div>
+
+            <div class="card skill-card">
+                <div class="skill-icon">☁️</div>
+                <h3>Cloud</h3>
+                <p>Microsoft 365, Exchange Online y AWS básico</p>
+            </div>
+
+            <div class="card skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>Data</h3>
+                <p>Power BI, dashboards y automatización</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+
+<section class="section">
+    <div class="container">
+
+        <h2 class="section-title">📁 Proyectos Destacados</h2>
+
+        <div class="grid">
+
+            <a href="docs/MigracionIMAPExchange.pdf" target="_blank" class="card">
+
+                <span class="project-tag">Infraestructura</span>
+
+                <h3>Migración IMAP a Exchange</h3>
+
+                <p>
+                    Migración de cuentas IMAP a Microsoft Exchange para
+                    integración y continuidad operativa.
+                </p>
+
+                <span class="project-link">
+                    Ver documentación →
+                </span>
+
+            </a>
+
+            <a href="docs/ManualAcronis.pdf" target="_blank" class="card">
+
+                <span class="project-tag">Backups</span>
+
+                <h3>Respaldos con Acronis</h3>
+
+                <p>
+                    Automatización de respaldos mensuales mediante
+                    Acronis Cyber Protect Cloud.
+                </p>
+
+                <span class="project-link">
+                    Ver documentación →
+                </span>
+
+            </a>
+
+            <a href="docs/ReporteDeAsistencias.pdf" target="_blank" class="card">
+
+                <span class="project-tag">Power BI</span>
+
+                <h3>Dashboard de Asistencias</h3>
+
+                <p>
+                    Desarrollo de dashboard para monitoreo de entradas,
+                    salidas y métricas operativas.
+                </p>
+
+                <span class="project-link">
+                    Ver documentación →
+                </span>
+
+            </a>
+
+            <a href="https://chrislehe.github.io/crservicios/" target="_blank" class="card">
+
+                <span class="project-tag">Web</span>
+
+                <h3>Servicios Digitales</h3>
+
+                <p>
+                    Plataforma web para acceso rápido a trámites digitales
+                    oficiales utilizando HTML, CSS y JavaScript.
+                </p>
+
+                <span class="project-link">
+                    Ir al proyecto →
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CASOS -->
+
+<section class="section">
+    <div class="container">
+
+        <h2 class="section-title">🧠 Casos Reales Resueltos</h2>
+
+        <div class="grid">
+
+            <div class="card case-card">
+
+                <h3>Automatización de reportes</h3>
+
+                <div class="case-item">
+                    <strong>Problema:</strong>
+                    Reportes manuales lentos y propensos a errores.
+                </div>
+
+                <div class="case-item">
+                    <strong>Solución:</strong>
+                    Desarrollo de dashboard automatizado en Power BI.
+                </div>
+
+                <div class="case-item">
+                    <strong>Resultado:</strong>
+                    Mejora en tiempos de análisis y toma de decisiones.
+                </div>
+
+            </div>
+
+            <div class="card case-card">
+
+                <h3>Reloj checador en Teams</h3>
+
+                <div class="case-item">
+                    <strong>Problema:</strong>
+                    Ausencia de sistema centralizado de asistencia.
+                </div>
+
+                <div class="case-item">
+                    <strong>Solución:</strong>
+                    Implementación de registro integrado en Microsoft Teams.
+                </div>
+
+                <div class="case-item">
+                    <strong>Resultado:</strong>
+                    Mejor control operativo y trazabilidad.
+                </div>
+
+            </div>
+
+            <div class="card case-card">
+
+                <h3>Automatización con Power Automate</h3>
+
+                <div class="case-item">
+                    <strong>Problema:</strong>
+                    Retrasos por validaciones manuales.
+                </div>
+
+                <div class="case-item">
+                    <strong>Solución:</strong>
+                    Flujos automáticos de notificaciones.
+                </div>
+
+                <div class="case-item">
+                    <strong>Resultado:</strong>
+                    Reducción de tiempos de respuesta.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCIA -->
+
+<section class="section">
+    <div class="container">
+
+        <h2 class="section-title">💼 Experiencia</h2>
+
+        <div class="timeline">
+
+            <!-- ITEM -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        2024 - Actualidad
+                    </div>
+
+                    <h3>
+                        Soporte Técnico | Grupo Tecnologías Estratégicas
+                    </h3>
+
+                    <p>
+                        Administración de infraestructura, soporte técnico,
+                        automatización y continuidad operativa.
+                    </p>
+
+                    <ul>
+                        <li>Migración de correos IMAP a Exchange</li>
+                        <li>Implementación de respaldos con Acronis</li>
+                        <li>Automatización de reportes operativos</li>
+                        <li>Implementación de reloj checador</li>
+                        <li>Administración de redes y CCTV</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        2018 - 2024
+                    </div>
+
+                    <h3>
+                        Help Desk | First Cash S.A. de C.V.
+                    </h3>
+
+                    <p>
+                        Soporte técnico remoto y presencial en LATAM,
+                        infraestructura, Active Directory y redes.
+                    </p>
+
+                    <ul>
+                        <li>Soporte a sucursales en México y LATAM</li>
+                        <li>Administración de Active Directory</li>
+                        <li>Configuración de redes y dispositivos</li>
+                        <li>Gestión de Microsoft 365 y Exchange</li>
+                        <li>Implementación de reportes con Power BI</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-date">
+                        2017 - 2018
+                    </div>
+
+                    <h3>
+                        Practicante de TI | American Loan Employee Services
+                    </h3>
+
+                    <p>
+                        Atención de incidencias, mantenimiento y soporte técnico.
+                    </p>
+
+                    <ul>
+                        <li>Soporte remoto y presencial</li>
+                        <li>Instalación de software</li>
+                        <li>Configuración de equipos</li>
+                        <li>Control de inventario</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+
+<footer class="contact">
+
+    <p>📧 tuemail@gmail.com</p>
+
+    <p>📱 81XXXXXXXX</p>
+
+</footer>
+
+</body>
+</html>

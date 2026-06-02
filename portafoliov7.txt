@@ -530,24 +530,9 @@ body{
             </div>
 
             <div class="hero-buttons">
-
-    <a href="cv.pdf" target="_blank">
-        📄 Ver CV
-    </a>
-
-    <a href="https://linkedin.com" target="_blank">
-        💼 LinkedIn
-    </a>
-
-    <a href="mailto:christopher.rdz93@icloud.com">
-        📩 Contacto
-    </a>
-
-    <a href="https://github.com/chrislehe/" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-    </a>
-
-</div>
+                <a href="cv.pdf" target="_blank">📄 Ver CV</a>
+                <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+                <a href="mailto:tuemail@gmail.com">📩 Contacto</a>
             </div>
 
         </div>
@@ -1212,20 +1197,9 @@ body{
 
 <footer class="contact">
 
-    <p>
-        <i class="fa-solid fa-envelope"></i> Email: christopher.rdz93@icloud.com
-    </p>
+    <p>📧 christopher.rdz93@icloud.com</p>
 
-    <p>
-        <i class="fa-solid fa-phone"></i> Tel. 8124536734
-    </p>
-
-    <p>
-        <i class="fa-brands fa-github"></i>
-        <a href="https://github.com/chrislehe/" target="_blank" style="color:#38bdf8; text-decoration:none;">
-            GitHub
-        </a>
-    </p>
+    <p>📱 8124356734</p>
 
 </footer>
 
