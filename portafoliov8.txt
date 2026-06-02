@@ -688,10 +688,9 @@ body{
                     <h3>Migración IMAP a Exchange</h3>
 
                     <p>
-Migración de correo empresarial hacia Microsoft Exchange con el objetivo de centralizar la administración del servicio, mejorar la seguridad y garantizar continuidad operativa.<br><br>
-
-La implementación permitió estandarizar la plataforma de comunicación interna y reducir riesgos de pérdida de información durante el proceso de transición.
-</p>
+                        Migración de más de 50 buzones corporativos desde IMAP hacia Microsoft Exchange,
+                        minimizando interrupciones operativas y garantizando continuidad del servicio.
+                    </p>
 
                     <span class="project-link">
                         Ver documentación →
@@ -720,10 +719,9 @@ La implementación permitió estandarizar la plataforma de comunicación interna
                     <h3>Respaldos Automatizados</h3>
 
                     <p>
-Implementación de una solución de respaldos automatizados utilizando Acronis Cyber Protect Cloud para proteger información crítica de la organización.<br><br>
-
-La automatización redujo la dependencia de procesos manuales y mejoró la confiabilidad en la recuperación de información ante incidentes o fallas.
-</p>
+                        Automatización de respaldos mensuales mediante
+                        Acronis Cyber Protect Cloud.
+                    </p>
 
                     <span class="project-link">
                         Ver documentación →
@@ -752,10 +750,8 @@ La automatización redujo la dependencia de procesos manuales y mejoró la confi
                     <h3>Dashboard de Asistencias</h3>
 
                     <p>
-Desarrollo de un dashboard en Power BI para el análisis de registros de asistencia y control operativo del personal.<br><br>
-
-La solución centralizó la información y mejoró la visualización de métricas clave, reduciendo el tiempo de generación de reportes manuales y facilitando la toma de decisiones.
-</p>
+                        Desarrollo de dashboard que redujo aproximadamente un 70% el tiempo invertido en elaboración manual de reportes.
+                    </p>
 
                     <span class="project-link">
                         Ver documentación →
@@ -784,10 +780,9 @@ La solución centralizó la información y mejoró la visualización de métrica
                     <h3>Servicios Digitales</h3>
 
                     <p>
-Desarrollo de una plataforma web orientada a centralizar información y acceso a servicios digitales relacionados con trámites administrativos.<br><br>
-
-El proyecto mejora la experiencia del usuario mediante una interfaz clara, rápida y responsiva, facilitando el acceso a información estructurada.
-</p>
+                        Plataforma web para acceso rápido a trámites digitales
+                        oficiales utilizando HTML, CSS y JavaScript.
+                    </p>
 
                     <span class="project-link">
                         Ir al proyecto →
